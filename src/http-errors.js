@@ -10,6 +10,9 @@ class HttpError extends Error {
 function notFound(message) {
   return new HttpError(404, message || 'not found');
 }
+function notFound(message) {
+  return new HttpError(404, message || 'not found');
+}
 
 function badRequest(message) {
   return new HttpError(400, message || 'bad request');
